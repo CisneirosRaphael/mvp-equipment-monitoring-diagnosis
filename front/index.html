@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body{background-image: url("images/compressor_shaft.jpeg");
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    }</style>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- header section -->
+   <header>
+       <div class="title">
+           <table><tr><th><h1>AI Equipment diagnosis</h1></th></tr>
+       <tr><th><th>This is a simplified system that os based on an artificial inteligence algorithm</h1></th></tr>
+       <tr><th><th>to predict if an industrial equipment is faulty given its monitoring parameters data. </h1></th></tr>
+       </table>
+    </div>
+   </header>
+
+  <!-- Section to add a new equipment monitoring data -->
+    <section class="newEquipmentMonitoring">
+        <!-- <data-tip="This is the text of the tooltip2"></data-tip> -->
+        <div data-tip="Equipment type">
+            <input type="text" id="newType" placeholder="Type:" >
+        </div>
+        <div data-tip="Equipment tag">
+            <input type="text" id="newTag" placeholder="Tag:">
+        </div> 
+        <div data-tip="Temperature (°C)">
+            <input type="text" id="newTemperature" placeholder="Temperature:">
+        </div>
+        <div data-tip="Pressure (bar a &micro;m)">
+            <input type="text" id="newPressure" placeholder="Pressure:">
+        </div>
+        <div data-tip="Vibration amplitude (g rms)">
+            <input type="text" id="newVibration" placeholder="Vibration:">
+        </div>
+        <div data-tip="Humidity (%)">
+            <input type="text" id="newHumidity" placeholder="Humidity:">
+        </div> 
+        </div> 
+        <!-- Button to add the new equipment monitoring data entry -->
+        <button onclick="newEquipmentMonitoring()" class="addBtn">Add</button>
+    </section>
+    
+  <!-- Section displaying a table with compressor test entries stored in the database -->
+    <section class="equipmentsMonitoring">
+        <!-- Wrap the table in a scrollable container -->
+        <div class="table-container">
+            <table id="dataTable">
+                <tr>
+                    <th class="column-header-1"><div>Type</div></th>
+                    <th class="column-header-3"><div>Tag</div></th>
+                    <th class="column-header-3"><div>Temperature <br> (°C)</div></th>
+                    <th class="column-header-3"><div>Pressure <br> (bar a)</div></th>
+                    <th class="column-header-3"><div>Vibration <br> (g rms)</div></th>
+                    <th class="column-header-3"><div>Humidity <br> (%)</div></th>
+                    <th class="column-header-1"><div>Faulty</div></th>
+                    <th class="column-header-4"><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <script src="./javascript/scripts.js"></script>
+</body>
+</html>
+
+

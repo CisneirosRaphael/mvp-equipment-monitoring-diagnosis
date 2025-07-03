@@ -1,0 +1,6 @@
+/.pytest_cache
+/.vscode
+/api/__pycache__
+/api/log/
+api/model/__pycache__
+api/schemas/__pycache__
