@@ -261,11 +261,11 @@ const insertList = (type, tag, temperature, pressure, vibration, humidity, outco
   const diagnosticText = outcome === 1 ? "FAULTY" : "NOT FAULTY";
   diagnosticCell.textContent = diagnosticText;
   
-  // Aplpply styling based on diagnosis result 
+  // Apply styling based on diagnosis result 
   if (outcome === 1) {
-    diagnosticCell.className = "Faulty";
+    diagnosticCell.className = "faulty";
   } else {
-    diagnosticCell.className = "Not faulty";
+    diagnosticCell.className = "not-faulty";
   }
 
   // Insert delete button
