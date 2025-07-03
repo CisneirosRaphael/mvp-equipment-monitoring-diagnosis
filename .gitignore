@@ -4,3 +4,4 @@
 /api/log/
 api/model/__pycache__
 api/schemas/__pycache__
+api/tests/__pycache__
